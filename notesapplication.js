@@ -30,7 +30,7 @@ function get(note_id)
 function search(search_text)
 	{ 
 		console.log("Showing results for search " + search_text + "\n");
-		console.log("Note ID: " + " "+ indexOf(listNotes.match(/search_text/gi)) + "\n" + "By Author " + );
+		console.log("Note ID: " + " "+ indexOf(listNotes.match(/search_text/gi)) + "\n" + listNotes.match(/search_text/gi)+"\n"+ "By Author " + this.author);
 	}
 							   
 function delet(note_id)
