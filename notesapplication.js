@@ -29,10 +29,13 @@ function search(search_text)
 		console.log("Note ID: " + " "+ indexOf(listNotes.match(/search_text/gi)) + "\n" + "By Author " + );
 	}
 							   
-function delete(note_id)
+function delet(note_id)
 	{
-		
+		delete listNotes(note_id);	
 	}
 
-edit(note_id, new_content) { }
+edit(note_id, new_content)
+{ 
+	
+}
 }
