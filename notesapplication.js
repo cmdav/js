@@ -1,9 +1,12 @@
-function NotesApplication(author) 
+function NotesApplication() 
 {
+var NoteApp = function(author) {
 this.author = author;
+
 this.listNotes = new Array();
-this.create = function(note_content);
-this.listNotes = function() ;
+}
+//this.create = function(note_content);
+//this.listNotes = function() ;
 
 function create(note_content) 
 	{ 
@@ -19,9 +22,10 @@ function listNotes()
 				} 
 	}
 function get(note_id)
-	{
-		console.log(" The note for ID " + noteid + " is " + listNotes(noteid));
-						
+	{	if (isNaN(note_id)) { console.log("Please ensure you input the right index value");}
+		else {
+			console.log(" The note for ID " + noteid + " is " + listNotes(noteid));
+			}			
 	}
 function search(search_text)
 	{ 
