@@ -34,8 +34,8 @@ function delet(note_id)
 		delete listNotes(note_id);	
 	}
 
-edit(note_id, new_content)
+function edit(note_id, new_content)
 { 
-	
+	listNodes.replace(note_id,new_content);
 }
 }
