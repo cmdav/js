@@ -43,3 +43,5 @@ NotesApplication.prototype.edit = function(note_id, new_content)
 	listNodes.replace(note_id,new_content);
 };
 
+var notes1 = new NotesApplication("Davies");
+console.log("The Author is " + notes1.author);
