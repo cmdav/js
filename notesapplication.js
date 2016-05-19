@@ -4,7 +4,7 @@ var NotesApplication = function(auth) {
 //this.listNotes = function() 
  
 };
-this.list = [];
+var this.list = [];
 //this.create = function(note_content);
 
 NotesApplication.prototype.listNotes = function() 

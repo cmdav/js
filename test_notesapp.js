@@ -37,6 +37,14 @@ describe("NotesApplication", function() {
       it("is must be defined", function() {
         expect(NotesApplication.prototype.delete).not.toBeUndefined();
       });
+	  	  
+      it("is must be defined", function() {
+        expect(NotesApplication.prototype.edit).not.toBeUndefined();
+      });
+
+      it("is must be defined", function() {
+        expect(list).not.toBeUndefined();
+      });
 	 
 	  
 	 
