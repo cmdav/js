@@ -1,11 +1,21 @@
 'use strict';
 
-function NotesApplication() {
-var NotesApplication;
-beforeEach(function) {
-NotesApplication = new NotesApplication();
-}	
+//function NotesApplication() {
+//var NotesApplication;.
+//beforeEach(function) {
+//NotesApplication = new NotesApplication();
+//}
+//} 
 
+//describe("NotesApplication", function() {
+//   var NotesApplication;
+
+//   beforeEach(function(){
+//       var author = author;
+ //    //  var notes = notes;
+//       notes = new NotesApplication(author);
+//   });	
+//)};
 describe("NotesApplication", function() {
 
       it("is must be defined", function() {
@@ -13,23 +23,22 @@ describe("NotesApplication", function() {
       });
 	  
 	  it("is must be defined", function() {
-        expect(listNotes).not.toBeUndefined();
+        expect(NotesApplication.prototype.listNotes).not.toBeUndefined();
       });
 
       it("is must be defined", function() {
-        expect(create).not.toBeUndefined();
+        expect(NotesApplication.prototype.create).not.toBeUndefined();
       });
 	  
-	  it("is must be defined", function() {
-        expect(search).not.toBeUndefined();
+	 it("is must be defined", function() {
+        expect(NotesApplication.prototype.search).not.toBeUndefined();
       });
 	  
-	  it("is must be defined", function() {
-        expect(delete).not.toBeUndefined();
-      });
-	  
-	  it("is must be defined", function() {
-        expect(edit).not.toBeUndefined();
+      it("is must be defined", function() {
+        expect(NotesApplication.prototype.delete).not.toBeUndefined();
       });
 	 
+	  
+	 
     });
+	
