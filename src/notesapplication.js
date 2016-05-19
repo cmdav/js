@@ -4,7 +4,7 @@ var NotesApplication = function(auth) {
 //this.listNotes = function() 
  
 };
-var this.list = [];
+this.list = [];
 //this.create = function(note_content);
 
 NotesApplication.prototype.listNotes = function() 
@@ -13,7 +13,7 @@ NotesApplication.prototype.listNotes = function()
 				{
 					console.log("Note ID: " + " "+ indexOf(list(i)) + "\n" + "By Author " + list(i) );
 							
-				}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+				} 
 	};
 
 NotesApplication.prototype.create = function(note_content) 
@@ -24,7 +24,7 @@ NotesApplication.prototype.create = function(note_content)
 NotesApplication.prototype.get = function(note_id)
 	{	if (isNaN(note_id)) { console.log("Please ensure you input the right index value");}
 		else {
-			console.log(" The note for ID " + note_id + " is " + list[note_id] " " + this.author);
+			console.log(" The note for ID " + note_id + " is " + list[note_id]);
 			}			
 	};
 NotesApplication.prototype.search = function(search_text)
